@@ -5,7 +5,7 @@ import Error from './Error';
 const Searcher = ({setSearch}) => {
     
     const [termSearch, setTermSearch] = useState('');
-    const [error, setError] = useState('false');
+    const [error, setError] = useState(false);
 
     const searchImage = e => {
         e.preventDefault();
@@ -31,15 +31,15 @@ const Searcher = ({setSearch}) => {
                     <input 
                         type = "text"
                         className = "form-control form-control-lg"
-                        placeholder = "Search a pic, ex: coffee, soccer"
+                        placeholder = "Search a pic, example: coffee, soccer..."
                         onChange = {e => setTermSearch(e.target.value)}
                     />
                 </div>
-                <div className = "form-group col-md-8">
+                <div className = "form-group col-md-4">
                     <input 
                         type = "submit"
                         className = "btn btn-lg btn-danger btn-block"
-                        value = "Search"
+                        value = "Let's Go!"
                     />
                 </div>
             </div>
